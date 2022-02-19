@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 
 function Cover() {
     return (
-        <div class="px-3 mt-5">
+        <div class="px-3" style={{ marginTop: '6rem' }}>
             <h1>Logistic monitoring system</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+            <p class="lead">Логистическая система для отслеживания основных действий в интернет-магазине QMarket</p>
             <p class="lead">
-                <Link class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</Link>
+                <Link class="btn btn-lg btn-secondary fw-bold border-white bg-white text-black mt-2">Learn more</Link>
             </p>
         </div>
     )
