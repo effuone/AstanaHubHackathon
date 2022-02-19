@@ -1,0 +1,32 @@
+import React from 'react'
+import Map from '../components/Map'
+import Monitor from '../components/Monitor'
+import { Link } from 'react-router-dom'
+
+function Dashboard() {
+    return (
+        <div>
+            <div className='d-flex text-center text-white bg-dark'>
+                <div className='cover-container d-flex w-100 p-3 mx-auto flex-column'>
+                    <header>
+                        <div className='d-flex justify-content-between align-items-center'>
+                            <h5 className="float-md-start mb-0">Re Vera</h5>
+                            <nav className="nav nav-masthead justify-content-center float-md-end">
+                                <Link className="nav-link" to="/" >Home</Link>
+                                <Link className="nav-link active" to="/dashboard" >Dashboard</Link>
+                                <Link className="nav-link" to="/login">Login</Link>
+                                <Link className="nav-link" to="/register">Register</Link>
+                            </nav>
+                        </div>
+                    </header>
+                </div>
+            </div>
+            <Map />
+            <div className='monitor'>
+                <Monitor />
+            </div>
+        </div>
+    )
+}
+
+export default Dashboard
